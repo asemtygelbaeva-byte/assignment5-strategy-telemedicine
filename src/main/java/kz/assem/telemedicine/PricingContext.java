@@ -1,23 +1,18 @@
 package kz.assem.telemedicine;
 
 public final class PricingContext {
-    private PricingChoice choice;
+    private PricingStrategy strategy;
 
-    public PricingContext(PricingChoice choice) {
-        this.choice = choice;
+    public PricingContext(PricingStrategy strategy) {
+        setStrategy(strategy);
     }
 
-    public void setStrategy(PricingChoice choice) {
-        this.choice = choice;
+    public void setStrategy(PricingStrategy strategy) {
+        this.strategy = java.util.Objects.requireNonNull(strategy);
     }
 
     public int quote(ConsultationRequest request) {
-        return switch (choice.type()) {
-            case FLAT -> choice.fees().sessionFee();
-            case TIME_BLOCK -> ((request.minutes() + 14) / 15) * choice.fees().blockFee();
-            case MEMBERSHIP -> ((Math.max(0, request.minutes() - request.includedMinutes()) + 14) / 15)
-                    * choice.fees().blockFee();
-        };
+        return strategy.quote(request);
     }
 }
 

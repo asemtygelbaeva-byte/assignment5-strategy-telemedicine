@@ -7,10 +7,10 @@ public final class PricingSelector {
         this.fees = fees;
     }
 
-    public PricingChoice select(ConsultationRequest request) {
-        if (request.member()) return new PricingChoice(PricingChoice.Type.MEMBERSHIP, fees);
-        if (request.minutes() > 30) return new PricingChoice(PricingChoice.Type.TIME_BLOCK, fees);
-        return new PricingChoice(PricingChoice.Type.FLAT, fees);
+    public PricingStrategy select(ConsultationRequest request) {
+        if (request.member()) return new MembershipPricing(fees);
+        if (request.minutes() > 30) return new TimeBlockPricing(fees);
+        return new FlatPricing(fees);
     }
 }
 
