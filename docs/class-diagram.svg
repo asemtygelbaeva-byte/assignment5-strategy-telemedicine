@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1470" viewBox="0 0 1500 1470">
+<rect width="1500" height="1470" fill="white"/>
+<text x="750" y="40" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="32" font-weight="700">Telemedicine Strategy class diagram</text>
+<rect x="525" y="65" width="450" height="82" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="750.0" y="97" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">Demo</text>
+<path d="M525 111 H975" stroke="#526578" stroke-width="2"/>
+<text x="750.0" y="138" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">main(args)</text>
+<text x="40" y="195" text-anchor="start" fill="#182535" font-family="Arial,sans-serif" font-size="28" font-weight="700">Consultation pricing</text>
+<rect x="40" y="225" width="300" height="100" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="190.0" y="257" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">PricingSelector</text>
+<path d="M40 271 H340" stroke="#526578" stroke-width="2"/>
+<text x="190.0" y="298" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">select(request): PricingStrategy</text>
+<rect x="420" y="225" width="350" height="145" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="595.0" y="257" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">PricingContext</text>
+<path d="M420 271 H770" stroke="#526578" stroke-width="2"/>
+<text x="595.0" y="298" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">strategy: PricingStrategy</text>
+<text x="595.0" y="325" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">setStrategy(strategy)</text>
+<text x="595.0" y="352" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">quote(request): int</text>
+<rect x="860" y="225" width="340" height="132" fill="#edf4fb" stroke="#526578" stroke-width="2"/>
+<text x="1030.0" y="257" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">«interface»</text>
+<text x="1030.0" y="286" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">PricingStrategy</text>
+<path d="M860 300 H1200" stroke="#526578" stroke-width="2"/>
+<text x="1030.0" y="327" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">quote(request): int</text>
+<path d="M340 270 L395 270 L395 185 L1030 185 L1030 225" fill="none" stroke="#455d73" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polyline points="1021.0,209.0 1030,225 1039.0,209.0" fill="none" stroke="#455d73" stroke-width="2.5"/>
+<text x="540" y="177" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="18" font-weight="400">creates</text>
+<path d="M770 290 L860 290" fill="none" stroke="#455d73" stroke-width="2.5"/>
+<polyline points="844.0,299.0 860,290 844.0,281.0" fill="none" stroke="#455d73" stroke-width="2.5"/>
+<text x="810" y="280" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="18" font-weight="400">uses</text>
+<rect x="40" y="450" width="350" height="108" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="215.0" y="482" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">FlatPricing</text>
+<path d="M40 496 H390" stroke="#526578" stroke-width="2"/>
+<text x="215.0" y="523" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">quote(request): int</text>
+<text x="215.0" y="550" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">one session fee</text>
+<path d="M215 450 L215 397 L1030 397 L1030 357" fill="none" stroke="#455d73" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="1030,357 1039.0,373.0 1021.0,373.0" fill="white" stroke="#455d73" stroke-width="2.5"/>
+<rect x="420" y="450" width="350" height="108" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="595.0" y="482" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">TimeBlockPricing</text>
+<path d="M420 496 H770" stroke="#526578" stroke-width="2"/>
+<text x="595.0" y="523" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">quote(request): int</text>
+<text x="595.0" y="550" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">ceil(minutes / 15) × rate</text>
+<path d="M595 450 L595 397 L1030 397 L1030 357" fill="none" stroke="#455d73" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="1030,357 1039.0,373.0 1021.0,373.0" fill="white" stroke="#455d73" stroke-width="2.5"/>
+<rect x="800" y="450" width="350" height="108" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="975.0" y="482" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">MembershipPricing</text>
+<path d="M800 496 H1150" stroke="#526578" stroke-width="2"/>
+<text x="975.0" y="523" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">quote(request): int</text>
+<text x="975.0" y="550" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">bill minutes above allowance</text>
+<path d="M975 450 L975 397 L1030 397 L1030 357" fill="none" stroke="#455d73" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="1030,357 1039.0,373.0 1021.0,373.0" fill="white" stroke="#455d73" stroke-width="2.5"/>
+<rect x="40" y="605" width="360" height="145" fill="#edf4fb" stroke="#526578" stroke-width="2"/>
+<text x="220.0" y="637" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">«interface»</text>
+<text x="220.0" y="666" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">FeeSource</text>
+<path d="M40 680 H400" stroke="#526578" stroke-width="2"/>
+<text x="220.0" y="707" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">sessionFee(): int</text>
+<text x="220.0" y="734" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">blockFee(): int</text>
+<rect x="470" y="605" width="330" height="108" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="635.0" y="637" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">DemoFeeSource</text>
+<path d="M470 651 H800" stroke="#526578" stroke-width="2"/>
+<text x="635.0" y="678" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">sessionFee() = 6000</text>
+<text x="635.0" y="705" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">blockFee() = 2000</text>
+<path d="M470 659 L400 659" fill="none" stroke="#455d73" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="400,659 416.0,650.0 416.0,668.0" fill="white" stroke="#455d73" stroke-width="2.5"/>
+<path d="M215 558 L215 605" fill="none" stroke="#455d73" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polyline points="206.0,589.0 215,605 224.0,589.0" fill="none" stroke="#455d73" stroke-width="2.5"/>
+<path d="M595 558 L595 582 L300 582 L300 605" fill="none" stroke="#455d73" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polyline points="291.0,589.0 300,605 309.0,589.0" fill="none" stroke="#455d73" stroke-width="2.5"/>
+<path d="M975 558 L975 590 L365 590 L365 605" fill="none" stroke="#455d73" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polyline points="356.0,589.0 365,605 374.0,589.0" fill="none" stroke="#455d73" stroke-width="2.5"/>
+<text x="1110" y="650" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="21" font-weight="400">All pricing strategies depend</text>
+<text x="1110" y="682" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="21" font-weight="400">on the FeeSource interface</text>
+<path d="M570 147 L570 225" fill="none" stroke="#455d73" stroke-width="2.5"/>
+<polyline points="561.0,209.0 570,225 579.0,209.0" fill="none" stroke="#455d73" stroke-width="2.5"/>
+<text x="40" y="800" text-anchor="start" fill="#182535" font-family="Arial,sans-serif" font-size="28" font-weight="700">Doctor selection</text>
+<rect x="40" y="830" width="300" height="100" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="190.0" y="862" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">DoctorSelector</text>
+<path d="M40 876 H340" stroke="#526578" stroke-width="2"/>
+<text x="190.0" y="903" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">select(request): DoctorStrategy</text>
+<rect x="420" y="830" width="350" height="145" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="595.0" y="862" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">DoctorContext</text>
+<path d="M420 876 H770" stroke="#526578" stroke-width="2"/>
+<text x="595.0" y="903" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">strategy: DoctorStrategy</text>
+<text x="595.0" y="930" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">setStrategy(strategy)</text>
+<text x="595.0" y="957" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">choose(request, doctors): Doctor</text>
+<rect x="860" y="830" width="340" height="132" fill="#edf4fb" stroke="#526578" stroke-width="2"/>
+<text x="1030.0" y="862" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">«interface»</text>
+<text x="1030.0" y="891" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">DoctorStrategy</text>
+<path d="M860 905 H1200" stroke="#526578" stroke-width="2"/>
+<text x="1030.0" y="932" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">choose(request, doctors): Doctor</text>
+<path d="M340 870 L395 870 L395 790 L1030 790 L1030 830" fill="none" stroke="#455d73" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polyline points="1021.0,814.0 1030,830 1039.0,814.0" fill="none" stroke="#455d73" stroke-width="2.5"/>
+<text x="540" y="782" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="18" font-weight="400">creates</text>
+<path d="M770 895 L860 895" fill="none" stroke="#455d73" stroke-width="2.5"/>
+<polyline points="844.0,904.0 860,895 844.0,886.0" fill="none" stroke="#455d73" stroke-width="2.5"/>
+<text x="810" y="883" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="18" font-weight="400">uses</text>
+<rect x="40" y="1055" width="350" height="108" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="215.0" y="1087" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">EarliestDoctor</text>
+<path d="M40 1101 H390" stroke="#526578" stroke-width="2"/>
+<text x="215.0" y="1128" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">choose(request, doctors)</text>
+<text x="215.0" y="1155" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">smallest waiting time</text>
+<path d="M215 1055 L215 1002 L1030 1002 L1030 962" fill="none" stroke="#455d73" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="1030,962 1039.0,978.0 1021.0,978.0" fill="white" stroke="#455d73" stroke-width="2.5"/>
+<rect x="420" y="1055" width="350" height="108" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="595.0" y="1087" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">BestRatedDoctor</text>
+<path d="M420 1101 H770" stroke="#526578" stroke-width="2"/>
+<text x="595.0" y="1128" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">choose(request, doctors)</text>
+<text x="595.0" y="1155" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">highest rating</text>
+<path d="M595 1055 L595 1002 L1030 1002 L1030 962" fill="none" stroke="#455d73" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="1030,962 1039.0,978.0 1021.0,978.0" fill="white" stroke="#455d73" stroke-width="2.5"/>
+<rect x="800" y="1055" width="350" height="108" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="975.0" y="1087" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">PreviousDoctor</text>
+<path d="M800 1101 H1150" stroke="#526578" stroke-width="2"/>
+<text x="975.0" y="1128" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">choose(request, doctors)</text>
+<text x="975.0" y="1155" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">previous id; earliest fallback</text>
+<path d="M975 1055 L975 1002 L1030 1002 L1030 962" fill="none" stroke="#455d73" stroke-width="2.5" stroke-dasharray="10 7"/>
+<polygon points="1030,962 1039.0,978.0 1021.0,978.0" fill="white" stroke="#455d73" stroke-width="2.5"/>
+<path d="M975 106 L1405 106 L1405 740 L595 740 L595 830" fill="none" stroke="#455d73" stroke-width="2.5"/>
+<polyline points="586.0,814.0 595,830 604.0,814.0" fill="none" stroke="#455d73" stroke-width="2.5"/>
+<rect x="40" y="1220" width="655" height="118" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="367.5" y="1252" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">ConsultationRequest</text>
+<path d="M40 1266 H695" stroke="#526578" stroke-width="2"/>
+<text x="367.5" y="1293" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">minutes, member, includedMinutes</text>
+<text x="367.5" y="1320" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">urgent, followUp, previousDoctorId</text>
+<rect x="800" y="1220" width="400" height="118" fill="#f6f7f9" stroke="#526578" stroke-width="2"/>
+<text x="1000.0" y="1252" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="24" font-weight="700">Doctor</text>
+<path d="M800 1266 H1200" stroke="#526578" stroke-width="2"/>
+<text x="1000.0" y="1293" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="20" font-weight="400">id, name, rating, waitMinutes</text>
+<text x="750" y="1395" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="21" font-weight="400">Solid arrow: dependency     Dashed triangle: interface implementation</text>
+<text x="750" y="1430" text-anchor="middle" fill="#182535" font-family="Arial,sans-serif" font-size="21" font-weight="400">Request data is passed to both strategy families; no context chooses a strategy type.</text>
+</svg>
